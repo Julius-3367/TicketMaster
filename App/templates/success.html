@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verification Code Sent</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Verification code sent to {{ email }}</h1>
+    <div class="container">
+        <h1>Verification code sent to {{ email }}</h1>
+        <p>Your ticket code is: {{ code }}</p>
+    </div>
 </body>
 </html>
-
-
 

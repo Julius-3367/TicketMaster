@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        /* Add your CSS styles for the receipt here */
+    </style>
+</head>
+<body>
+    <h1>Receipt</h1>
+    <p>Thank you for booking with us!</p>
+    <p>Your ticket number is: {{ code }}</p>
+    <p>Date and Time: {{ now.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+    <!-- Add other receipt details as needed -->
+    <button onclick="window.print()">Print Receipt</button>
+</body>
+</html>
+
